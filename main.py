@@ -62,7 +62,7 @@ async def _(e):
 @client.on(telethon.events.CallbackQuery)
 async def _(e):
     if e.query.user_id not in SUDO:
-        await e.client.send_message(e.chat.id, "You have no access to bot")
+        await e.client.send_message(e.chat.id, "You have no access to bot\n\n Get It From @IshanSingla_xD")
         return
     if e.data == b"Admin":
         but = [
