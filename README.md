@@ -7,13 +7,13 @@
 <b>A stable Induced Cracking Bot with pre Configs, based on Telethon.</b>
 
 [![](https://img.shields.io/badge/InducedCheckerBot-v1.0.0-blue)](#)
-[![Stars](https://img.shields.io/github/stars/InducedOfficial/InducedCheckerBot?style=flat-square&color=yellow)](https://github.com/TeamUltroid/Ultroid/stargazers)
-[![Forks](https://img.shields.io/github/forks/InducedOfficial/InducedCheckerBot?style=flat-square&color=orange)](https://github.com/TeamUltroid/Ultroid/fork)
-[![Size](https://img.shields.io/github/repo-size/InducedOfficial/InducedCheckerBot?style=flat-square&color=green)](https://github.com/InducedOfficial/InducedCheckerBot/)   
-[![Python](https://img.shields.io/badge/Python-v3.10.2-blue)](https://www.python.org/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/InducedOfficial/InducedCheckerBot/graphs/commit-activity) 
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/InducedOfficial/InducedCheckerBot)
-[![Contributors](https://img.shields.io/github/contributors/InducedOfficial/InducedCheckerBot?style=flat-square&color=green)](https://github.com/InducedOfficial/InducedCheckerBot/graphs/contributors) 
+[![Stars](https://img.shields.io/github/stars/IshanSingla/InducedCheckerBot?style=flat-square&color=yellow)](https://github.com/TeamUltroid/Ultroid/stargazers)
+[![Forks](https://img.shields.io/github/forks/IshanSingla/InducedCheckerBot?style=flat-square&color=orange)](https://github.com/TeamUltroid/Ultroid/fork)
+[![Size](https://img.shields.io/github/repo-size/IshanSingla/InducedCheckerBot?style=flat-square&color=green)](https://github.com/IshanSingla/InducedCheckerBot/)   
+[![Python](https://img.shields.io/badge/Python-v3.9-blue)](https://www.python.org/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/IshanSingla/InducedCheckerBot/graphs/commit-activity) 
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/IshanSingla/InducedCheckerBot)
+[![Contributors](https://img.shields.io/github/contributors/IshanSingla/InducedCheckerBot?style=flat-square&color=green)](https://github.com/IshanSingla/InducedCheckerBot/graphs/contributors) 
 ----
 
 Fast test checkers then any tool , all type of subscription, 
