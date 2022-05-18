@@ -47,7 +47,10 @@ async def update_requirements(main , test):
     except Exception as e:
         print(f"Error installing requirments {str(e)}")
 
+print("Initializing Loop...")
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(update_requirements(sys.argv[1] , sys.argv[2]))
 loop.close()
+
+print("•Done•")
