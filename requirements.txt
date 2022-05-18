@@ -1,0 +1,5 @@
+# Important Requirements here.
+telethon
+requests
+psutil
+python-dotenv

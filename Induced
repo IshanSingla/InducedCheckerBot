@@ -1,0 +1,43 @@
+#!/bin/bash
+
+
+_get_repolink () {
+    local regex
+    regex='(https?)://github.com/.+/.+'
+    if [[ $INDUCE_REPO == "InducedCheckerBot" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0luZHVjZWRPZmZpY2lhbC9JbmR1Y2VkQ2hlY2tlckJvdC9hcmNoaXZlL21haW4uemlw" | base64 -d
+    elif [[ $INDUCE_REPO == "InducedCheckerBot" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0luZHVjZWRPZmZpY2lhbC9JbmR1Y2VkQ2hlY2tlckJvdC9hcmNoaXZlL21haW4uemlw" | base64 -d
+    elif [[ $INDUCE_REPO =~ $regex ]]
+    then
+        if [[ $INDUCE_REPO_BRANCH ]]
+        then
+            echo "${INDUCE_REPO}/archive/${INDUCE_REPO_BRANCH}.zip"
+        else
+            echo "${INDUCE_REPO}/archive/master.zip"
+        fi
+    else
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0luZHVjZWRPZmZpY2lhbC9JbmR1Y2VkQ2hlY2tlckJvdC9hcmNoaXZlL21haW4uemlw" | base64 -d
+    fi
+}
+
+
+_set_bot () {
+    local zippath
+    zippath="InducedCheckerBot.zip"
+    echo "• Downloading Data •"
+    wget -q $(_get_repolink) -O "$zippath"
+    inducepath=$(zipinfo -1 "$zippath" | grep -v "/.");
+    unzip -qq "$zippath"
+    echo "• Done •"
+    rm -rf "$zippath"
+    sleep 5
+    cd $inducepath
+    echo "••• Starting InducedCheckerBot ••• "
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 -m main.py
+}
+
+_set_bot
