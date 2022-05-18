@@ -153,7 +153,7 @@ async def _(e):
         await e.answer('Comming Soon', alert=True)
     else:
         async with e.client.conversation(e.chat_id) as xmr:
-            await xmr.send_message("Send Your Combo File or text in corect formet")
+            await xmr.send_message("Send Your Combo File or Text In Correct Format")
             try:
                 File = await xmr.get_response(timeout=300)
             except:
