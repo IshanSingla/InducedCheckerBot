@@ -157,7 +157,7 @@ async def _(e):
             try:
                 File = await xmr.get_response(timeout=300)
             except:
-                await xmr.send_message("Timeout 5min")
+                await xmr.send_message("Timeout! You Must Send The File Under 5min")
                 return
             if File.text == "/start" or File.text == "/help":
                 return
@@ -171,7 +171,7 @@ async def _(e):
                 if ":" in File.text:
                     data = str(File.text).split("\n")
                 else:
-                    await xmr.send_message("Invalid way of Text Combo")
+                    await xmr.send_message("You Have Sended An Invalid way of Text Combo")
                     return
 
             good = 0
