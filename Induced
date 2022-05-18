@@ -6,10 +6,10 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $INDUCE_REPO == "InducedCheckerBot" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0luZHVjZWRPZmZpY2lhbC9JbmR1Y2VkQ2hlY2tlckJvdC9hcmNoaXZlL21haW4uemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0lzaGFuU2luZ2xhL0luZHVjZWRDaGVja2VyQm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d
     elif [[ $INDUCE_REPO == "InducedCheckerBot" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0luZHVjZWRPZmZpY2lhbC9JbmR1Y2VkQ2hlY2tlckJvdC9hcmNoaXZlL21haW4uemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0lzaGFuU2luZ2xhL0luZHVjZWRDaGVja2VyQm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d
     elif [[ $INDUCE_REPO =~ $regex ]]
     then
         if [[ $INDUCE_REPO_BRANCH ]]
@@ -19,7 +19,7 @@ _get_repolink () {
             echo "${INDUCE_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0luZHVjZWRPZmZpY2lhbC9JbmR1Y2VkQ2hlY2tlckJvdC9hcmNoaXZlL21haW4uemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0lzaGFuU2luZ2xhL0luZHVjZWRDaGVja2VyQm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d
     fi
 }
 
