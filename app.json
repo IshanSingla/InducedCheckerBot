@@ -1,5 +1,5 @@
 {
-    "name": "Induce Checker",
+    "name": "Induced Checker",
     "description": "Checker",
     "logo": "",
     "keywords": [
@@ -13,7 +13,7 @@
     "success_url": "https://t.me/InducedBotsSupport",
     "env": {
         "SUDO": {
-            "description": "..",
+            "description": "Your sudo,owner id for multiple use",
             "value": ""
         },
         "API_ID": {
