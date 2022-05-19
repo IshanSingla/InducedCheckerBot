@@ -33,12 +33,12 @@ Both Proxy and Non Proxy System will be there, with public source codes 🤡
 
 The easy way to host InducedCheckerBot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/InducedOfficial/InducedCheckerBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/IshanSingla/InducedCheckerBot)
 
 ## 🚀 Okteto Deployment
 
 <h4>Click the button below to deploy InducedCheckerBot on Okteto!</h4>
-<a href="https://cloud.okteto.com/deploy?repository=https://github.com/InducedOfficial/InducedCheckerBot"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200""/></a>
+<a href="https://cloud.okteto.com/deploy?repository=https://github.com/IshanSingla/InducedCheckerBot"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200""/></a>
 
 ## Environment Variables / Mandatory Variables 🤖
 - `API_ID` - Your Api id. 
