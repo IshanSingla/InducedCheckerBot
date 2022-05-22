@@ -227,7 +227,46 @@ async def _(e):
             await xmr.send_message("All Done")
 
 
-
+@client.on(telethon.events.InlineQuery)
+async def inline_alive(o):
+    if o.original_update.user_id in acc:
+        return
+    """
+    ishan=[
+        await o.builder.article(
+                text="• **Induced Promotion Bot \nSubscribtion Cost: 200Rs per Month •**",
+                buttons=[[telethon.Button.url("• Dm to Buy Subscribtion •", url="t.me/IshanSingla_xD")]],
+                title="Induced Promotion Bot",
+                description="Use Our To Promote your self For Selling\nAuto Post Sender In Multiple groups",
+                thumb=telethon.tl.types.InputWebDocument("https://telegra.ph/file/8ff763cebfe2af1a3ce45.jpg", 0, "image/jpg", []),
+                content=telethon.tl.types.InputWebDocument("https://telegra.ph/file/8ff763cebfe2af1a3ce45.jpg", 0, "image/jpg", []),
+        )
+    ]
+    """
+    ishan = [
+        await o.builder.photo(
+            "https://telegra.ph/file/94a7f2073cdcf4c002a09.jpg",
+            text="Induced Checker Bot \n\nAll main Checking Features Given Below\n👇\n\nAccs: \n\n• Zee5 Bulk Accs Checker\n• Alt Balaji Bulk Accs Checker\n• Voot Bulk Accs Checker\n\nComing Soon 🔥 :\n• Proxy Checker \n• Cc Bulk Checker\n#NOTE: It's Free & Public For Other Users \n\nDemoBot: @InducedChecker_Bot\n\n© @InducedBots || @Teaminduced",
+            buttons=[
+                [
+                    telethon.Button.url("• Support •", url="t.me/InducedBotsSupport"),
+                    telethon.Button.url("• Repo •", url="https://github.com/IshanSingla/InducedCheckerBot")
+                ],
+                [
+                    telethon.Button.url("• Deploy to Heroku •", url="https://heroku.com/deploy?template=https://github.com/IshanSingla/InducedCheckerBot"),
+                    telethon.Button.url("• Tutorial •", url="https://github.com/IshanSingla/InducedCheckerBot")
+                ]
+            ],
+            link_preview=False,
+        )
+    ]
+    await o.answer(
+        ishan,
+        cache_time=300,
+        switch_pm="👥 Induced Promotion Bot",
+        switch_pm_param="start",
+    )
+    
 print(text)
 try:
     client.run_until_disconnected()
