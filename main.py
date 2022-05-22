@@ -150,7 +150,7 @@ async def _(e):
         await e.answer('\nRestarting Bot Wait', alert=True)
         os.execl(sys.executable, sys.executable, "-m", "main")
     elif e.data == b"Proxys":
-        await e.client.send_message(e.chat.id, "Send Your Combo File or text in correct format")
+        await e.answer('Comming Soon', alert=True)
     else:
         async with e.client.conversation(e.chat_id) as xmr:
             await xmr.send_message("Send Your Combo File or Text In Correct Format")
@@ -193,11 +193,8 @@ async def _(e):
                     d = "zee5"
                 elif e.data == b"alt":
                     d = "alt"
-                elif e.data == b"Proxys":
-                    i = "Proxys"
                 re = requests.get(
-                    f"https://inducedapi.vercel.app/{d}?idp={idp}"
-                    f"https://inducedapi.vercel.app/cc{i}?idp=4543563405874531|07|2025|508")
+                    f"https://inducedapi.vercel.app/{d}?idp={idp}")
                 ishan = Dict2Class(re.json())
                 try:
                     if ishan.error:
