@@ -83,6 +83,11 @@ async def _(e):
                 telethon.Button.inline("AltBalaji", "alt"),
             ],
             [
+                telethon.Button.inline("Hoichoi", "hoichoi"),
+                telethon.Button.inline("Netflix", "Proxys"),
+                telethon.Button.inline("Hotstar", "Proxys"),
+            ],
+            [
                 telethon.Button.inline("Back", b"Home")
             ]
         ]
@@ -193,6 +198,8 @@ async def _(e):
                     d = "zee5"
                 elif e.data == b"alt":
                     d = "alt"
+                elif e.data == b"hoichoi":
+                    d = "hoichoi"
                 re = requests.get(
                     f"https://inducedapi.vercel.app/{d}?idp={idp}")
                 ishan = Dict2Class(re.json())
